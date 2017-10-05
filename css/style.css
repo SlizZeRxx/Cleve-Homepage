@@ -1,18 +1,44 @@
+    /* Positioning */
+    html {
+    position: relative;
+    min-height: 100%; /* Fixing Footer */
+    }
+
+    /* Body Adjustments */
+    body {
+    margin: 0 0 100px; /* Last Value = footer gap to top */
+    padding: 25px;
+    }
+
+    /* Footer */ 
+    footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
+    }
+
     /* Font */
     p {
     font-family: Arial, Helvetica, sans-serif;
     }
 
     /* Centering Images */
-    .center {
+    .centerimage {
     display: block; 
     margin: 0 auto;
     padding-bottom: 5%;
     }   
+    /* Centering Text */
+    .centertext {
+    text-align: center;
+    }   
 
 
     /*-----------------Dropdown-----------------*/
-    /* Color Of Dropdown Button */
+    /* Dropdown Button Color */
     .dropbtn {
         background-color: #f1f1f1;
         color: black;
@@ -23,19 +49,20 @@
         border-radius: 10px;
     }
 
+    /* Positioning of Dropdown */
     .dropdown {
         position: relative;
         display: inline-block;
     }
 
-    /* Create Dropdown */
+    /* Create Dropdown Menu*/
     .dropdown-content {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 7;
+        z-index: 1;
         padding: 10px 16px;
         border-radius: 5px;
     }
@@ -60,3 +87,6 @@
     .dropdown:hover .dropbtn {
         background-color: lightgrey;
     }
+
+
+    
