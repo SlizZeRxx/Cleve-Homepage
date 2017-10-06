@@ -1,3 +1,13 @@
+    /*------------------ Fahrschule Cleve ------------------*/
+                /* Dominik Schirmer & Jannis Rex */
+                    /*----------------------*/
+                        /*--------------*/
+                            /*------*/
+                                
+
+
+
+    /*------------------ General ------------------*/ 
     /* Positioning */
     html {
     position: relative;
@@ -41,11 +51,10 @@
     color: #f1f1f1;
     }
 
-    
-    /* Icons */
-    .icon {
-    height: 250px;
-    width: 120px;
+    /* Create Container */
+    .container{
+    border: 1px solid #ccc;
+    text-align: center;
     }
 
     /* Centering Images */
@@ -61,7 +70,40 @@
     }   
 
 
-    /*-----------------Dropdown-----------------*/
+
+
+    /*------------------ Contact Page ------------------*/ 
+    /* Own Line For Each Caption */
+     .caption {
+    display: block;
+    color: #ff4040;
+    }
+
+    /* Sticky Text */
+    div.item {
+    vertical-align: top; /* Align Images */
+    display: inline-block;
+    text-align: center; /* Horizontally Center Images And Caption */
+    width: 190px; /* Margin Around Images */
+    padding-top: 5%; /* Icon Placement */
+    padding-left: 10%; /* Icon Placement */
+    }
+
+    /* Icons */
+    .icon {
+    height: 120px;
+    width: 120px;
+    display: inline-block;
+    margin: 35px;
+    text-align: center;
+    }
+
+
+
+
+
+
+    /*------------------ Dropdown ------------------*/
     /* Dropdown Button Color */
     .dropbtn {
         background-color: #f1f1f1;
