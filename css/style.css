@@ -42,8 +42,11 @@
     }
 
     
-
-    
+    /* Icons */
+    .icon {
+    height: 250px;
+    width: 120px;
+    }
 
     /* Centering Images */
     .centerimage {
@@ -51,6 +54,7 @@
     margin: 0 auto;
     padding-bottom: 5%;
     }   
+
     /* Centering Text */
     .centertext {
     text-align: center;
