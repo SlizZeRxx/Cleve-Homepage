@@ -78,13 +78,37 @@
     .topright {
     position:absolute;
     top:20%;
-    right:5%;
+    right:10%;
     /* padding-top: 2%; */
     /* padding-right: 2%; */
     }
 
+    /* Partner Image 1*/
+    .partner1 {
+    position:absolute;
+    height: 100px;
+    width: 150px;
+    top:30%;
+    right:10%;
+    }
 
+    /* Partner Image 2*/
+    .partner2 {
+    position:absolute;
+    height: 100px;
+    width: 150px;
+    top:30%;
+    right:10%;
+    }
 
+    /* Partner Image 3*/
+    .partner3 {
+    position:absolute;
+    height: 100px;
+    width: 150px;
+    top:30%;
+    right:10%;
+    }
 
 
     /*------------------ Contact Page ------------------*/ 
