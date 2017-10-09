@@ -55,7 +55,7 @@
     .box {
     float: none;
     width: 80%;
-    height: auto;
+    height: 600px;
     margin-left: 10px;
     margin-top: 10px;
     padding: 5px;
@@ -77,7 +77,7 @@
     .centerimage {
     display: block; 
     margin: 0 auto;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
     }   
 
     /* Centering Text */
@@ -124,6 +124,17 @@
     width: 120px;
     top:46%;
     right:9.5%;
+    }
+
+    /* Background Box */
+    #partner {
+    height: 400px;
+    width: 240px;
+    background-color: #808080;
+    float: right;
+    margin-right: 40px;
+    margin-top: 0px;
+    border-radius: 10px;
     }
 
 
