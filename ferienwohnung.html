@@ -30,7 +30,7 @@
         <img src="pictures/Partners/Verband.png" class="partner3" alt="Fehler beim Anzeigen des Bildes" style="width 100px"></a> <!-- 3. Partner - Fahrlehrerverband -->
         </div> 
            
-            
+   
         <!-- Dropdown --> 
         <div class="dropdown">
         <a href="index.html"><button class="dropbtn">Menü</button></a>
@@ -46,8 +46,135 @@
         </div>
         </div>    
             
-        <!-- Main Content -->    
-        <div class="box"></div>       
+        <!-- Main Content -->  
+        <div class="box">    
+        <!-- SlideShow -->
+        <div class="slideshow-container">
+            <!-- each picture -->
+            <div class="mySlides">
+                <div class="slidecount">1 / 15</div>
+                <img src="pictures/Wohnung/bild1.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="slidecount">2 / 15</div>
+                <img src="pictures/Wohnung/bild2.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="slidecount">3/ 15</div>
+                <img src="pictures/Wohnung/bild3.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">4 / 15</div>
+                <img src="pictures/Wohnung/bild4.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">5 / 15</div>
+                <img src="pictures/Wohnung/bild5.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">6 / 15</div>
+                <img src="pictures/Wohnung/bild6.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">7 / 15</div>
+                <img src="pictures/Wohnung/bild7.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">8 / 15</div>
+                <img src="pictures/Wohnung/bild8.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">9 / 15</div>
+                <img src="pictures/Wohnung/bild9.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">10 / 15</div>
+                <img src="pictures/Wohnung/bild10.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">11 / 15</div>
+                <img src="pictures/Wohnung/bild11.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            <!-- ENDE -->
+            <div class="mySlides">
+                <div class="slidecount">12 / 15</div>
+                <img src="pictures/Wohnung/schlaf.jpg" class ="slidesize">
+                <div class="text">Schlafzimmer</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">13 / 15</div>
+                <img src="pictures/Wohnung/stube01.jpg" class ="slidesize">
+                <div class="text">Wohnzimmer</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">14 / 15</div>
+                <img src="pictures/Wohnung/stube02.jpg" class ="slidesize">
+                <div class="text">Wohnzimmer</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="slidecount">15 / 15</div>
+                <img src="pictures/Wohnung/kueche.jpg" class ="slidesize">
+                <div class="text">Küche</div>
+            </div>
+                <!-- slide -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+        <!-- Script for SlideShow -->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+        </div>       
             
         <footer> <!-- Replace Date with <?php echo date("Y"); ?> -->
             <p>
