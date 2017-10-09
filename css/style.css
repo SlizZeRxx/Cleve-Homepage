@@ -34,7 +34,7 @@
     height: 50px;
     overflow:hidden;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
     color: #000000;
     margin-left: 10px;
     margin-bottom: 3px;
@@ -95,7 +95,7 @@
     .topright {
     position:absolute;
     top:20%;
-    right:10%;
+    right:6.5%;
     /* padding-top: 2%; */
     /* padding-right: 2%; */
     }
@@ -105,31 +105,31 @@
     position:absolute;
     height: 50px;
     width: 220px;
-    top:29%;
+    top:31%;
     right:4%;
     }
 
     /* Partner Image 2*/
     .partner2 {
     position:absolute;
-    height: 90px;
-    width: 200px;
-    top:35%;
-    right:6%;
+    height: 100px;
+    width: 220px;
+    top:39%;
+    right:4.5%;
     }
 
     /* Partner Image 3*/
     .partner3 {
     position:absolute;
-    height: 110px;
-    width: 120px;
-    top:46%;
-    right:9.5%;
+    height: 150px;
+    width: 150px;
+    top:52%;
+    right:6.5%;
     }
 
     /* Background Box */
     #partner {
-    height: 400px;
+    height: 500px;
     width: 240px;
     background-color: #808080;
     float: right;
@@ -144,6 +144,21 @@
      .caption {
     display: block;
     color: #ff4040;
+    position: relative;     
+    line-height: 1.5em; /* For Underline */
+    }
+
+    /* Underline For Captions*/
+    .caption:after {
+    content:' ';
+    position: absolute;
+    top:90%; /* Pos */
+    left:50%; /* Pos */
+    width:25px; /* Size */
+    border:2px solid #d0d0d0; /* Size and Color */
+    border-radius:4px; /* Round Edges */
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05); /* Shadow */
+    transform:translateX(-50%); /* Position rel. to Text */ 
     }
 
     /* Sticky Text */
@@ -152,8 +167,8 @@
     display: inline-block;
     text-align: center; /* Horizontally Center Images And Caption */
     width: 180px; /* Margin Around Images */
-    padding-top: 10%; /* Icon Placement */
-    padding-left: 7%; /* Icon Placement */
+    padding-top: 10%; /* Icon Placement Top */
+    padding-left: 7%; /* Icon Placement Lef */
     }
 
     /* Icons */
