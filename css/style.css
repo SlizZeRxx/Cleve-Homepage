@@ -51,6 +51,16 @@
     color: #f1f1f1;
     }
 
+    /* Content Box */
+    .box {
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 2px solid #000000;
+    } 
+
     /* Create Container */
     .container{
     border: 1px solid #ccc;
@@ -74,6 +84,11 @@
     text-align: center;
     }   
 
+
+
+
+
+    /*------------------ Partner ------------------*/ 
     /* TopRightCorner Image */
     .topright {
     position:absolute;
@@ -86,28 +101,28 @@
     /* Partner Image 1*/
     .partner1 {
     position:absolute;
-    height: 100px;
-    width: 150px;
-    top:30%;
-    right:10%;
+    height: 50px;
+    width: 220px;
+    top:29%;
+    right:4%;
     }
 
     /* Partner Image 2*/
     .partner2 {
     position:absolute;
-    height: 100px;
-    width: 150px;
-    top:30%;
-    right:10%;
+    height: 90px;
+    width: 200px;
+    top:35%;
+    right:6%;
     }
 
     /* Partner Image 3*/
     .partner3 {
     position:absolute;
-    height: 100px;
-    width: 150px;
-    top:30%;
-    right:10%;
+    height: 110px;
+    width: 120px;
+    top:46%;
+    right:9.5%;
     }
 
 
@@ -123,9 +138,9 @@
     vertical-align: top; /* Align Images */
     display: inline-block;
     text-align: center; /* Horizontally Center Images And Caption */
-    width: 190px; /* Margin Around Images */
-    padding-top: 5%; /* Icon Placement */
-    padding-left: 8.5%; /* Icon Placement */
+    width: 180px; /* Margin Around Images */
+    padding-top: 8%; /* Icon Placement */
+    padding-left: 8%; /* Icon Placement */
     }
 
     /* Icons */
