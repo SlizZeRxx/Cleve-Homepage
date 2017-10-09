@@ -53,8 +53,9 @@
 
     /* Content Box */
     .box {
-    float: left;
-    width: 200px;
+    float: none;
+    width: 80%;
+    height: auto;
     margin-left: 10px;
     margin-top: 10px;
     padding: 5px;
