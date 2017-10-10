@@ -32,7 +32,7 @@
     left: 0px;
     bottom: 0px;
     height: 50px;
-    overflow:hidden;
+    overflow:hidden; /* Site Scrolling */
     color: black;
     font-family: Calibri, Arial, Helvetica, sans-serif;
     color: #000000;
@@ -56,7 +56,7 @@
     .box {
     float: none;
     width: 80%;
-    height: 590px;
+    height: 560px;
     margin-left: 10px;
     margin-top: 10px;
     padding: 5px;
