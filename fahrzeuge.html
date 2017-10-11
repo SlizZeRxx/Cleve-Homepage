@@ -47,7 +47,76 @@
         </div>  
         
         <!-- Main Content -->    
-        <div class="box"></div>             
+        <div class="box">
+            
+        <!-- SlideShow -->
+        <div class="slideshow-container">
+            <!-- each picture -->
+            <div class="mySlides">
+                <img src="" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+
+            <div class="mySlides">
+                <img src="" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+
+            <div class="mySlides">
+                <img src="pictures/Wohnung/bild3.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            <div class="mySlides">
+                <img src="pictures/Wohnung/bild4.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <img src="pictures/Wohnung/bild5.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <img src="pictures/Wohnung/bild6.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+            <div class="mySlides">
+                <img src="pictures/Wohnung/bild7.jpg" class ="slidesize">
+                <div class="text">Außenansicht</div>
+            </div>
+            
+                <!-- slide -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            
+        <!-- Script for SlideShow -->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+            }
+        </script>
+        </div>             
             
         <footer> <!-- Replace Date with <?php echo date("Y"); ?> -->
             <p>
