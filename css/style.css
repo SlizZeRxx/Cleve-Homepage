@@ -181,7 +181,7 @@
     }
 
     /* Next & Previous */
-    .prev, .next {
+    .prev, .next, .nextC {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -195,9 +195,15 @@
     border-radius: 0 3px 3px 0;
     }
 
-    /* Next pos */
+    /* Next Pos House*/
     .next {
     right: 70%;
+    border-radius: 3px 0 0 3px;
+    }
+
+    /* Next Pos Cars */
+    .nextC {
+    right: 50%;
     border-radius: 3px 0 0 3px;
     }
 
@@ -206,7 +212,16 @@
     background-color: rgba(0,0,0,0.8);
     }
 
-    /* Caption text */
+    /* Caption Header Cars*/
+    .headC {
+    display: block;
+    float: right;
+    overflow: hidden;
+    text-decoration: none;
+    margin: 5px 0px 0px 0px;
+    }
+
+    /* Caption Text House*/
     .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -215,7 +230,18 @@
     bottom: -7%;
     width: 30%;
     text-align: center;
-     vertical-align: top;
+    vertical-align: top;
+    }
+
+    /* Text Cars*/ 
+    .textC {
+    display: block;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    text-decoration: overline;
+    margin: 5px 0 0 0;
+    text-align:left;
+    text-decoration: none;
     }
 
     /* Count Picture*/
@@ -227,13 +253,20 @@
     top: 0;
     }
 
-    /* Picture Size */
+    /* Picture Size House */
     .slidesize {
     position: static;
     width: 300px;
     height: 500px;
     }
 
+    /* Picture Size Cars */
+    .slidesizeC {
+    position: static;
+    width: 500px;
+    height: 500px;
+    /* margin-right: 5px; */
+    }
 
     /*------------------ Contact Page ------------------*/ 
     /* Own Line For Each Caption */
